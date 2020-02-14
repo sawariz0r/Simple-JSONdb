@@ -89,10 +89,12 @@ function JSONdb(filePath, options) {
  * Creates or modifies a key in the database.
  * @param {string} key The key to create or alter.
  * @param {object} value Whatever to store in the key. You name it, just keep it JSON-friendly.
+ * @returns {object|undefined} The value of the set key or `undefined` if it doesn't exist.
  */
 JSONdb.prototype.set = function(key, value) {
   this.storage[key] = value;
   if (this.options && this.options.syncOnWrite) this.sync();
+  return this.get(key);
 };
 
 /**
