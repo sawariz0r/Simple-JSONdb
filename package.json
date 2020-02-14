@@ -1,6 +1,6 @@
 {
   "name": "simple-json-db",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A simple, no-frills, JSON storage engine for Node.JS",
   "main": "index.js",
   "engines": {
@@ -24,6 +24,9 @@
     "nodejs"
   ],
   "author": "Niccolò Maggioni <nicco.maggioni@gmail.com>",
+  "contributors": [
+    "Oscar Nilsson <oscar@spectly.se> (http://spectly.se/)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nmaggioni/Simple-JSONdb/issues"
