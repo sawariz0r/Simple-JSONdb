@@ -33,22 +33,23 @@ See the [Options](#options) section for more details.
 `db.set('key', 'value');`
 
 The `key` parameter must be a string, `value` can be whatever kind of object can be stored in JSON format. _`JSON.stringify()` is your friend!_
+The function returns the set value if it exists, else it returns `undefined`.
 
 ### Get a key
 `db.get('key');`
 
-The `key` parameter must be a string. If the key exhists its value is returned, if it doesn't the function returns `undefined`.
+The `key` parameter must be a string. If the key exists its value is returned, if it doesn't the function returns `undefined`.
 
 ### Check a key
 `db.has('key');`
 
-The `key` parameter must be a string. If the key exhists `true` is returned, if it doesn't the function returns `false`.
+The `key` parameter must be a string. If the key exists `true` is returned, if it doesn't the function returns `false`.
 
 ### Delete a key
 
 `db.delete('key');`
 
-The `key` parameter must be a string. The function returns [as per the _delete_ operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete#Return_value) if the key exhists, else it returns `undefined`.
+The `key` parameter must be a string. The function returns [as per the _delete_ operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete#Return_value) if the key exists, else it returns `undefined`.
 
 ### Sync to disk
 `db.sync();`
